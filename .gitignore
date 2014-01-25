@@ -1,0 +1,55 @@
+# A decent default .gitignore
+# Same as GitHub's at https://github.com/github/gitignore/blob/master/Python.gitignore
+# except keeps /bin directory.
+
+*.py[co]
+
+# Editor stuff
+*.swp
+*.swo
+*.swn
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+var
+sdist
+develop-eggs
+.installed.cfg
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+temporary*bson
+.coverage
+.tox
+
+#Translations
+*.mo
+
+#apple
+.DS_Store
+#settings
+settings/local.py
+
+.idea
+
+tmp
+local_settings.py
+
+# Vim edit files
+*~
+*.swp
+
+# local settings file
+local_settings.py
+
+node_modules
+Sauce-Connect-latest/sauce_connect.log
+dumps/
+stunnel.log
