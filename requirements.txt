@@ -3,3 +3,4 @@ South==0.8.4
 gunicorn==18.0
 psycopg2==2.5.2
 dj-database-url==0.2.2
+raven==4.0.3

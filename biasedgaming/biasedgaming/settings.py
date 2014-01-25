@@ -64,6 +64,10 @@ DATABASES = {
 import dj_database_url
 DATABASES['default'] =  dj_database_url.config()
 
+SENTRY_DSN = os.environ.get('SENTRY_DSN', '')
+if SENTRY_DSN:
+    RAVEN_CONFIG = {'dsn': SENTRY_DSN}
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
@@ -91,3 +95,4 @@ TEMPLATE_DIRS = (
 try:
     from local_settings import *
 except ImportError: pass
+ 
