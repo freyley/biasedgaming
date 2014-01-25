@@ -5,3 +5,4 @@ psycopg2==2.5.2
 dj-database-url==0.2.2
 raven==4.0.3
 newrelic
+dj-static==0.0.5

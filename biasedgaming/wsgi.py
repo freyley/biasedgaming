@@ -8,6 +8,9 @@ https://docs.djangoproject.com/en/1.6/howto/deployment/wsgi/
 """
 
 import os
+import sys
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+sys.path.append(os.path.join(BASE_DIR, 'biasedgaming'))
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "biasedgaming.settings")
 
 from django.core.wsgi import get_wsgi_application
