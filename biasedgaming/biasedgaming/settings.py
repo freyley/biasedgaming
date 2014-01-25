@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os, sys
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-DEBUG = bool(os.environ.get("DEBUG", True))
+DEBUG = bool(int(os.environ.get("DEBUG", 1)))
 TEMPLATE_DEBUG = DEBUG
 
 # Quick-start development settings - unsuitable for production
