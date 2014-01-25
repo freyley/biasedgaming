@@ -104,7 +104,7 @@ LOGGING = {
             'class': 'logging.StreamHandler',
             'stream': sys.stdout
         }
-    }
+    },
     'loggers': {
         'django': {
             'handlers': ['console'],
