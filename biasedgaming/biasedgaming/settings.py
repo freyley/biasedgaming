@@ -66,6 +66,7 @@ DATABASES['default'] =  dj_database_url.config()
 
 SENTRY_DSN = os.environ.get('SENTRY_DSN', '')
 if SENTRY_DSN:
+    INSTALLED_APPS.append('raven.contrib.django.raven_compat') 
     RAVEN_CONFIG = {'dsn': SENTRY_DSN}
 
 # Internationalization
