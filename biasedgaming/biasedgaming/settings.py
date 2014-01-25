@@ -94,7 +94,32 @@ STATICFILES_DIRS = (
 TEMPLATE_DIRS = (
         os.path.join(BASE_DIR, 'templates'),
 )
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'stream': sys.stdout
+        }
+    }
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'propagate': True,
+            'level': 'INFO',
+        },
+        '': {
+            'handlers': ['console'],
+            'level': 'INFO',
+        }
+    }
+}
+
 try:
     from local_settings import *
 except ImportError: pass
  
+
